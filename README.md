@@ -1,4 +1,4 @@
-# Fake ReCAPTCHA Generator
+# 限縮檢舉倒數
 
 Visit site [here](https://fobshippingpoint.github.io/traffic-war-is-coming).
 
