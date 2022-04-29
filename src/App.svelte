@@ -12,8 +12,8 @@
 <div id="bg">
   <div id="photos-bg">
     <div id="photos" class="unselectable">
-      {#each Array(55) as photo, i}
-        <img src="/img/{i + 1}.jpg" alt="a{i + 1}" />
+      {#each Array(55) as _, i}
+        <img src="./img_resized/{i + 1}.jpg" alt="a{i + 1}" />
       {/each}
     </div>
   </div>
@@ -219,7 +219,7 @@
       </div>
       <hr />
       <h1>相關影片</h1>
-      <div class="center">
+      <div class="videobox">
         <iframe
           width="560"
           height="315"
@@ -230,7 +230,7 @@
           allowfullscreen
         />
       </div>
-      <div class="center">
+      <div class="videobox">
         <iframe
           width="560"
           height="315"
@@ -241,7 +241,7 @@
           allowfullscreen
         />
       </div>
-      <div class="center">
+      <div class="videobox">
         <iframe
           width="560"
           height="315"
@@ -386,7 +386,13 @@
     box-shadow: 0px 0px 21px 7px rgba(0, 0, 0, 0.29);
   }
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 990px) {
+    #article {
+      margin: 5% 5%;
+    }
+  }
+
+  /* @media screen and (max-width: 672px) {
     #countdown > div {
       font-size: 28px;
     }
@@ -402,6 +408,69 @@
 
     #article {
       margin: 5% 0;
+    }
+  } */
+
+  @media all and (min-width: 320px) and (max-width: 750px) {
+    #countdown > div {
+      font-size: 28px;
+    }
+
+    #countdown > div > span {
+      font-size: 10.5px;
+    }
+
+    #title {
+      font-size: 36px;
+      letter-spacing: 0.5em;
+    }
+
+    #article {
+      margin: 5% 0;
+    }
+  }
+
+  @media all and (min-width: 751px) and (max-width: 1024px) {
+    #countdown > div {
+      font-size: 48px;
+    }
+
+    #countdown > div > span {
+      font-size: 18px;
+    }
+
+    #title {
+      font-size: 62px;
+      letter-spacing: 0.5em;
+    }
+
+    #article {
+      margin: 5% 10%;
+    }
+  }
+
+  @media all and (min-width: 1025px) and (max-width: 1600px) {
+    #countdown > div {
+      font-size: 64px;
+    }
+
+    #countdown > div > span {
+      font-size: 24px;
+    }
+
+    #title {
+      font-size: 72px;
+      letter-spacing: 0.5em;
+    }
+
+    #article {
+      margin: 5% 20%;
+    }
+  }
+
+  @media all and (min-width: 1601px) {
+    #article {
+      margin: 5% 30%;
     }
   }
 

@@ -1,6 +1,6 @@
 # 限縮檢舉倒數
 
-Visit site [here](https://fobshippingpoint.github.io/traffic-war-is-coming).
+Visit site [here](https://traffic-war-is-coming.onrender.com/).
 
 <!-- ## Screenshots
 
